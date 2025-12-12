@@ -116,7 +116,7 @@ const Hero: React.FC<HeroProps> = ({ onOrderClick }) => {
             </div>
             <div className="flex items-center gap-2">
               <MapPin size={16} className="text-[#E07A5F]" />
-              <span>12 Rue des Saveurs, 75011 Paris</span>
+              <span>25 Rue Lionnaise, 49100 Angers, France</span>
             </div>
           </div>
 

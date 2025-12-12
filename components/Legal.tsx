@@ -16,18 +16,18 @@ const Legal: React.FC = () => {
           <h3 className="font-bold mt-4">Éditeur du site</h3>
           <p>
             Le site <strong>Les Saveurs de Maghreb</strong> est édité par :<br />
-            <strong>Nom du responsable :</strong> [TON NOM OU NOM DE SOCIÉTÉ]<br />
-            <strong>Adresse :</strong> [TON ADRESSE COMPLÈTE]<br />
+            <strong>Nom du responsable :</strong> BENI MOUSSA LYNDA<br />
+            <strong>Adresse :</strong> 25 RUE LIONNAISE, 49100 ANGERS<br />
             <strong>Téléphone :</strong> 06 04 11 29 28<br />
             {/* Si tu es auto-entrepreneur ou société, ajoute ton SIRET ici */}
-            <strong>SIRET :</strong> [NUMÉRO SIRET SI APPLICABLE]
+            <strong>SIRET :</strong> 99145656700015
           </p>
 
           <h3 className="font-bold mt-4">Hébergement</h3>
           <p>
             Ce site est hébergé par :<br />
-            [NOM DE L'HÉBERGEUR, ex: Vercel Inc.]<br />
-            [ADRESSE DE L'HÉBERGEUR]<br />
+            Vercel Inc.<br />
+            Vercel Inc, 650 California St, San Francisco, CA 94108, US - MapQuest.<br />
           </p>
         </section>
 

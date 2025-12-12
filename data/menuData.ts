@@ -14,6 +14,16 @@ import couscousLegumeImg from '../assets/couscous-legumes.jpg';
 import couscousPouletImg from '../assets/couscous-poulet.jpg';
 import couscousViandeImg from '../assets/couscous-viande.jpg';
 import couscousRoyalImg from '../assets/couscous-royal.jpg';
+import tajineImg from '../assets/tajine.jpg';
+import gratinimg from '../assets/gratin.jpg';
+import djerbienimg from '../assets/djerbien.jpg';
+import patestounsiimg from '../assets/patestounsi.jpg';
+import adesimg from '../assets/ades.jpg';
+// --- IMPORTS TEMPORAIRES POUR LES BOISSONS ---
+// IMPORTANT : Remplace ces fichiers par tes vraies photos de bouteilles dans le dossier assets !
+import hamoudImg from '../assets/hamoud.jpg';   // Image temporaire pour le Hamoud blanc
+import selectoImg from '../assets/selecto.jpg'; // Image temporaire pour le Selecto (sombre)
+import slimImg from '../assets/slim.jpg';    // Image temporaire pour le Slim
 
 export const menuItems: MenuItem[] = [
   // --- ENTRÉES & SOUPES ---
@@ -31,7 +41,7 @@ export const menuItems: MenuItem[] = [
     name: 'Les Lentilles (Ades)',
     description: 'Plat de lentilles mijotées à l\'algérienne, riche en fer et en saveurs.',
     price: '6,50€',
-    image: chorbaImg, // Image temporaire
+    image: adesimg, // Image temporaire
     category: 'Starter',
     tags: ['Chaud', 'Légumineuse']
   },
@@ -60,7 +70,7 @@ export const menuItems: MenuItem[] = [
     name: 'Tajine',
     description: 'Mijoté traditionnel aux olives ou aux pruneaux selon la préparation du jour.',
     price: '10€',
-    image: mtewemImg, // Image temporaire
+    image: tajineImg, // Image temporaire
     category: 'Main',
     tags: ['Mijoté', 'Classique']
   },
@@ -78,7 +88,7 @@ export const menuItems: MenuItem[] = [
     name: 'Gratin',
     description: 'Gratin du jour fait maison, fondant et doré au four.',
     price: '9€',
-    image: mtewemImg, // Image temporaire
+    image: gratinimg, // Image temporaire
     category: 'Main',
     tags: ['Four', 'Fromage']
   },
@@ -87,7 +97,7 @@ export const menuItems: MenuItem[] = [
     name: 'Riz Tunisien (Djerbien)',
     description: 'Riz cuit à la vapeur avec un mélange de légumes, viande et épices.',
     price: '9€',
-    image: couscousLegumeImg, // Image temporaire
+    image: djerbienimg, // Image temporaire
     category: 'Main',
     tags: ['Vapeur', 'Tunisie']
   },
@@ -96,7 +106,7 @@ export const menuItems: MenuItem[] = [
     name: 'Pâtes Tounsi',
     description: 'Pâtes à la tunisienne, relevées et savoureuses.',
     price: '10€',
-    image: rechtaImg, // Image temporaire
+    image: patestounsiimg, // Image temporaire
     category: 'Main',
     tags: ['Piquant', 'Pâtes']
   },
@@ -157,7 +167,7 @@ export const menuItems: MenuItem[] = [
     tags: ['Léger', 'Finesse']
   },
 
-  // --- SANDWICHS & PAINS (Nouvelle Catégorie) ---
+  // --- SANDWICHS & PAINS ---
   {
     id: '30',
     name: 'Frikasi Tounsi',
@@ -238,5 +248,34 @@ export const menuItems: MenuItem[] = [
     image: kesraImg,
     category: 'Sandwich',
     tags: ['Pain', 'Croustillant']
+  },
+
+  // --- BOISSONS (Drinks) ---
+  {
+    id: '40',
+    name: 'Hamoud Boualem (La Blanche)',
+    description: 'L\'authentique limonade algérienne, rafraîchissante et pétillante.',
+    price: '2,50€',
+    image: hamoudImg, // Image temporaire à remplacer
+    category: 'Drink',
+    tags: ['Algérie', 'Gazeux', 'Citron']
+  },
+  {
+    id: '41',
+    name: 'Selecto',
+    description: 'Le célèbre soda brun algérien au goût unique de pomme et caramel.',
+    price: '2,50€',
+    image: selectoImg, // Image temporaire à remplacer
+    category: 'Drink',
+    tags: ['Algérie', 'Gazeux', 'Culte']
+  },
+  {
+    id: '42',
+    name: 'Slim',
+    description: 'Boisson gazeuse aux fruits rafraîchissante (parfums selon disponibilité).',
+    price: '2,50€',
+    image: slimImg, // Image temporaire à remplacer
+    category: 'Drink',
+    tags: ['Fruité', 'Gazeux']
   }
 ];

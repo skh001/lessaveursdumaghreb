@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Bike, Clock, MapPin, CalendarCheck, Utensils, Phone, Smartphone } from 'lucide-react';
+import { ExternalLink, Bike, Clock, MapPin, CalendarCheck, Utensils, Phone, Smartphone, Lock } from 'lucide-react';
 
 const Order: React.FC = () => {
   return (
@@ -10,10 +10,9 @@ const Order: React.FC = () => {
           <p className="text-lg text-[#264653]/70 mt-2">Sur place ou à emporter, retrouvez nos saveurs authentiques.</p>
        </div>
 
-      {/* --- SECTION 1 : RÉSERVER UNE TABLE (MIS EN AVANT) --- */}
+      {/* --- SECTION 1 : RÉSERVER UNE TABLE (ACTIVE) --- */}
       <div className="w-full bg-white border-2 border-[#E07A5F]/20 rounded-[2.5rem] p-8 md:p-12 mb-8 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden group hover:border-[#E07A5F] transition-all duration-300 shadow-lg hover:shadow-2xl">
          
-         {/* Déco d'arrière plan */}
          <div className="absolute -left-16 -bottom-16 text-[#E07A5F]/5 group-hover:text-[#E07A5F]/10 transition-colors duration-500">
             <Utensils size={300} />
          </div>
@@ -27,10 +26,8 @@ const Order: React.FC = () => {
               Venez profiter de l'ambiance chaleureuse du restaurant.
             </p>
 
-            {/* --- NOUVEAU : LES DEUX BOUTONS DE RÉSERVATION --- */}
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
-                
-                {/* Bouton 1 : Réserver en ligne (Lien Foodbooking) */}
+                {/* Bouton 1 : Réserver en ligne */}
                 <a 
                   href="https://www.foodbooking.com/api/res/z5kb_r"
                   target="_blank"
@@ -55,7 +52,6 @@ const Order: React.FC = () => {
             </p>
          </div>
 
-         {/* Illustration visuelle à droite (optionnel, icône téléphone) */}
          <div className="relative z-10 hidden md:block opacity-80 text-[#E07A5F]">
             <Smartphone size={120} strokeWidth={1} />
          </div>
@@ -67,7 +63,7 @@ const Order: React.FC = () => {
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         
-        {/* 1. Les Frères Toqués */}
+        {/* 1. Les Frères Toqués (ACTIF) */}
         <div className="bg-[#264653] rounded-[2rem] p-6 relative overflow-hidden group cursor-pointer text-[#F4F1DE] flex flex-col justify-between h-full min-h-[240px]">
           <div className="absolute top-0 right-0 w-40 h-40 bg-[#E07A5F] rounded-full blur-[60px] opacity-20 group-hover:opacity-40 transition-opacity"></div>
           
@@ -90,33 +86,47 @@ const Order: React.FC = () => {
           </div>
         </div>
 
-        {/* 2. Uber Eats */}
-        <a href="#" className="bg-[#06C167] rounded-[2rem] p-6 flex flex-col justify-between relative overflow-hidden group hover:scale-[1.02] transition-transform min-h-[240px]">
-           <div className="absolute -right-4 -bottom-4 text-white/20">
-             <ShoppingBagIcon size={100} />
+        {/* 2. Uber Eats (COMING SOON) */}
+        <div className="bg-gray-200 rounded-[2rem] p-6 flex flex-col justify-between relative overflow-hidden h-full min-h-[240px] opacity-80 cursor-not-allowed border border-gray-300">
+           {/* Badge Coming Soon */}
+           <div className="absolute top-4 right-4 z-20 bg-[#264653] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide flex items-center gap-1">
+             <Lock size={12} /> Bientôt
            </div>
-           <h3 className="text-2xl font-bold text-white relative z-10">Uber<br/>Eats</h3>
-           <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#06C167] relative z-10 mt-auto shadow-md">
-             <ExternalLink size={24} />
-           </div>
-        </a>
 
-        {/* 3. Deliveroo */}
-        <a href="#" className="bg-[#00CCBC] rounded-[2rem] p-6 flex flex-col justify-between relative overflow-hidden group hover:scale-[1.02] transition-transform min-h-[240px]">
-           <div className="absolute -right-4 -bottom-4 text-white/20">
+           <div className="absolute -right-4 -bottom-4 text-gray-400/30">
              <ShoppingBagIcon size={100} />
            </div>
-           <h3 className="text-2xl font-bold text-white relative z-10">Deliveroo</h3>
-           <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#00CCBC] relative z-10 mt-auto shadow-md">
-             <ExternalLink size={24} />
+           
+           <h3 className="text-2xl font-bold text-gray-500 relative z-10">Uber<br/>Eats</h3>
+           
+           <div className="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center text-gray-500 relative z-10 mt-auto">
+             <Clock size={24} />
            </div>
-        </a>
+        </div>
+
+        {/* 3. Deliveroo (COMING SOON) */}
+        <div className="bg-gray-200 rounded-[2rem] p-6 flex flex-col justify-between relative overflow-hidden h-full min-h-[240px] opacity-80 cursor-not-allowed border border-gray-300">
+           {/* Badge Coming Soon */}
+           <div className="absolute top-4 right-4 z-20 bg-[#264653] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide flex items-center gap-1">
+             <Lock size={12} /> Bientôt
+           </div>
+
+           <div className="absolute -right-4 -bottom-4 text-gray-400/30">
+             <ShoppingBagIcon size={100} />
+           </div>
+           
+           <h3 className="text-2xl font-bold text-gray-500 relative z-10">Deliveroo</h3>
+           
+           <div className="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center text-gray-500 relative z-10 mt-auto">
+             <Clock size={24} />
+           </div>
+        </div>
       </div>
 
       {/* --- SECTION 3 : INFOS PRATIQUES (BAS DE PAGE) --- */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           
-          {/* Horaires */}
+          {/* Horaires (ACTIF) */}
           <div className="bg-[#E07A5F] rounded-[2rem] p-8 text-white flex flex-row items-center justify-between relative overflow-hidden shadow-sm">
             <div>
                 <h4 className="text-xl font-bold mb-1 flex items-center gap-2">
@@ -133,19 +143,25 @@ const Order: React.FC = () => {
             </div>
           </div>
 
-          {/* Click & Collect / Adresse */}
-          <div className="bg-white rounded-[2rem] p-8 text-[#264653] flex flex-row items-center justify-between shadow-sm border border-[#264653]/5">
-             <div>
+          {/* Click & Collect (COMING SOON) */}
+          <div className="bg-white rounded-[2rem] p-8 text-[#264653] flex flex-row items-center justify-between shadow-sm border-2 border-dashed border-[#264653]/20 relative overflow-hidden">
+             
+             {/* Badge Coming Soon en coin */}
+             <div className="absolute top-0 right-0 bg-[#E07A5F] text-white text-xs font-bold px-4 py-1 rounded-bl-xl">
+               BIENTÔT DISPONIBLE
+             </div>
+
+             <div className="opacity-60"> {/* Contenu grisé */}
                 <h4 className="text-xl font-bold mb-1 flex items-center gap-2">
-                    <MapPin size={20} className="text-[#E07A5F]" /> Click & Collect
+                    <MapPin size={20} className="text-[#264653]" /> Click & Collect
                 </h4>
-                <p className="font-light text-sm opacity-70 mb-3">Récupérez votre commande au restaurant</p>
-                <p className="font-bold text-lg">
-                    12 Rue des Saveurs<br/>
-                    75011 Paris
+                <p className="font-light text-sm opacity-70 mb-3">Bientôt : Commandez et récupérez sur place</p>
+                <p className="font-bold text-lg text-gray-400">
+                   25 Rue Lionnaise<br/>
+                    49100 Angers, France
                 </p>
              </div>
-             <div className="bg-[#F4F1DE] p-4 rounded-full text-[#E07A5F]">
+             <div className="bg-gray-100 p-4 rounded-full text-gray-300">
                 <MapPin size={40} />
              </div>
           </div>

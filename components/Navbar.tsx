@@ -21,7 +21,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentView, setCurrentView }) => {
       <div className="bg-white/70 backdrop-blur-md shadow-lg rounded-full px-6 py-3 flex items-center space-x-2 md:space-x-4 border border-white/50 transition-all duration-300 hover:shadow-xl overflow-x-auto max-w-full">
         {/* Logo Text (Masqué sur petit mobile pour gagner de la place) */}
         <span className="hidden lg:block font-serif font-bold text-[#E07A5F] text-lg mr-4 tracking-wider whitespace-nowrap">
-          Les Saveurs
+          Les Saveurs de Maghreb
         </span>
 
         {navItems.map((item) => {
