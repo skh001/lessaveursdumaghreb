@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Star, Phone, CalendarCheck, Clock, MapPin } from 'lucide-react';
+import { Star, Phone, Clock, MapPin } from 'lucide-react';
 
 // --- IMPORTS DES IMAGES POUR LE DIAPORAMA ---
 import img1 from '../assets/bourak.jpg';
@@ -29,7 +29,7 @@ const Hero: React.FC<HeroProps> = ({ onOrderClick }) => {
   return (
     <div className="relative min-h-screen w-full flex flex-col md:flex-row overflow-hidden pt-28 md:pt-0 bg-[#F4F1DE]">
       
-      {/* --- STYLES D'ANIMATION (CSS INJECTÉ) --- */}
+      {/* --- STYLES D'ANIMATION --- */}
       <style>{`
         @keyframes fadeInUp {
           from { opacity: 0; transform: translateY(30px); }
@@ -60,7 +60,7 @@ const Hero: React.FC<HeroProps> = ({ onOrderClick }) => {
         }
         .slide-image.active {
           opacity: 0.9;
-          transform: scale(1.1); /* Effet Ken Burns (zoom lent) */
+          transform: scale(1.1); /* Effet Ken Burns */
         }
       `}</style>
 
@@ -85,31 +85,24 @@ const Hero: React.FC<HeroProps> = ({ onOrderClick }) => {
             De la Rechta algéroise au Couscous royal, redécouvrez les saveurs oubliées de nos grands-mères.
           </p>
 
-          {/* --- NOUVEAUX BOUTONS D'ACTION --- */}
-          <div className="animate-fade-up delay-300 pt-4 flex flex-col sm:flex-row gap-4">
-            {/* Bouton Réservation En Ligne */}
-            <a 
-              href="https://www.foodbooking.com/api/res/z5kb_r"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#E07A5F] text-white px-6 py-4 rounded-xl text-base font-bold shadow-lg hover:shadow-xl hover:bg-[#d66a4f] hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
-            >
-              <CalendarCheck size={20} />
-              Réserver une table
-            </a>
-
-            {/* Bouton Appeler */}
+          {/* --- ACTION BUTTON (PHONE ONLY) --- */}
+          <div className="animate-fade-up delay-300 pt-6">
             <a 
               href="tel:0604112928"
-              className="bg-[#264653] text-[#F4F1DE] px-6 py-4 rounded-xl text-base font-bold shadow-lg hover:shadow-xl hover:bg-[#1d353f] hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
+              className="bg-[#E07A5F] text-white px-8 py-5 rounded-xl text-xl font-bold shadow-xl hover:shadow-2xl hover:bg-[#d66a4f] hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-4 w-full sm:w-fit border-2 border-[#E07A5F]"
             >
-              <Phone size={20} />
-              06 04 11 29 28
+              <div className="bg-white/20 p-2 rounded-full animate-pulse">
+                <Phone size={24} className="text-white" />
+              </div>
+              <div className="flex flex-col items-start">
+                 <span className="text-xs uppercase opacity-90 font-semibold tracking-wider">Réserver / Commander</span>
+                 <span className="leading-none">06 04 11 29 28</span>
+              </div>
             </a>
           </div>
 
           {/* --- INFO RAPIDES (Horaires & Adresse) --- */}
-          <div className="animate-fade-up delay-300 pt-4 text-sm text-[#264653]/70 space-y-2">
+          <div className="animate-fade-up delay-300 pt-2 text-sm text-[#264653]/70 space-y-2">
             <div className="flex items-center gap-2">
               <Clock size={16} className="text-[#E07A5F]" />
               <span className="font-semibold">Mardi - Dimanche :</span> 12h00-14h30 / 19h00-22h30

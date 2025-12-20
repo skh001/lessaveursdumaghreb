@@ -19,263 +19,258 @@ import gratinimg from '../assets/gratin.jpg';
 import djerbienimg from '../assets/djerbien.jpg';
 import patestounsiimg from '../assets/patestounsi.jpg';
 import adesimg from '../assets/ades.jpg';
-// --- IMPORTS TEMPORAIRES POUR LES BOISSONS ---
-// IMPORTANT : Remplace ces fichiers par tes vraies photos de bouteilles dans le dossier assets !
-import hamoudImg from '../assets/hamoud.jpg';   // Image temporaire pour le Hamoud blanc
-import selectoImg from '../assets/selecto.jpg'; // Image temporaire pour le Selecto (sombre)
-import slimImg from '../assets/slim.jpg';    // Image temporaire pour le Slim
 
+// --- IMPORTS TEMPORAIRES POUR LES BOISSONS ---
+import hamoudImg from '../assets/hamoud.jpg';
+import selectoImg from '../assets/selecto.jpg';
+import slimImg from '../assets/slim.jpg';
+import brikimg from '../assets/brik.jpg';
+import quicheimg from '../assets/quiche.jpg';
+import tadjineviandeimg from '../assets/tadjinviande.jpg';
+import bouzaloufimg from '../assets/bouzalouf.jpg';
 export const menuItems: MenuItem[] = [
-  // --- ENTRÉES & SOUPES ---
+  // --- ENTRÉES & SNACKS ---
   {
     id: '1',
     name: 'Chorba Frik',
     description: 'La soupe incontournable : blé concassé (frik), viande, tomates fraîches et coriandre.',
-    price: '8€',
+    price: '6€', // Modifié
     image: chorbaImg,
     category: 'Starter',
     tags: ['Traditionnel', 'Soupe']
   },
   {
     id: '2',
-    name: 'Les Lentilles (Ades)',
-    description: 'Plat de lentilles mijotées à l\'algérienne, riche en fer et en saveurs.',
-    price: '6,50€',
-    image: adesimg, // Image temporaire
+    name: 'Bourak',
+    description: 'Cigare croustillant farci à la viande hachée, persil, oignons et fromage.',
+    price: '2,50€', // Modifié
+    image: bourakImg,
     category: 'Starter',
-    tags: ['Chaud', 'Légumineuse']
+    tags: ['Croustillant', 'Frit']
   },
   {
     id: '3',
     name: 'Brik',
     description: 'Feuille de brick croustillante farcie à l\'œuf coulant, thon et persil.',
-    price: '4,50€',
-    image: bourakImg,
+    price: '4,50€', // Modifié
+    image: brikimg,
     category: 'Starter',
     tags: ['Croustillant', 'Frit']
   },
-
-  // --- PLATS TRADITIONNELS (Mains) ---
+  {
+    id: '4',
+    name: 'Quiche au Poulet',
+    description: 'Tarte salée maison garnie de morceaux de poulet et d\'un appareil crémeux.',
+    price: '4€', // Nouveau
+    image: quicheimg, // Image temporaire
+    category: 'Starter',
+    tags: ['Snack', 'Maison']
+  },
   {
     id: '5',
+    name: 'Quiche à la Viande',
+    description: 'Tarte salée maison garnie de viande hachée savoureuse.',
+    price: '5€', // Nouveau
+    image: quicheimg, // Image temporaire
+    category: 'Starter',
+    tags: ['Snack', 'Maison']
+  },
+
+  // --- PLATS TRADITIONNELS & TAJINES ---
+  {
+    id: '10',
     name: 'Rechta Algéroise',
     description: 'Pâtes fines artisanales sauce blanche cannelle, poulet et navets.',
-    price: '12€',
+    price: '12€', // Modifié
     image: rechtaImg,
     category: 'Main',
     tags: ['Alger', 'Sauce Blanche']
   },
   {
-    id: '6',
-    name: 'Tajine',
-    description: 'Mijoté traditionnel aux olives ou aux pruneaux selon la préparation du jour.',
-    price: '10€',
-    image: tajineImg, // Image temporaire
+    id: '11',
+    name: 'Chakhchoukha',
+    description: 'Feuilles de semoule émiettées arrosées d\'une sauce rouge épicée, pois chiches et viande.',
+    price: '13€', // Nouveau
+    image: chtithaImg, // Image temporaire (utilise une image sauce rouge)
     category: 'Main',
-    tags: ['Mijoté', 'Classique']
+    tags: ['Biskra', 'Épicé']
   },
   {
-    id: '7',
+    id: '12',
+    name: 'Tajine Poulet',
+    description: 'Mijoté traditionnel aux olives ou légumes avec du poulet tendre.',
+    price: '10€', // Modifié
+    image: tajineImg,
+    category: 'Main',
+    tags: ['Mijoté', 'Poulet']
+  },
+  {
+    id: '13',
+    name: 'Tajine Viande',
+    description: 'Mijoté traditionnel avec des morceaux de viande d\'agneau ou bœuf.',
+    price: '13€', // Nouveau
+    image: tadjineviandeimg, // Image temporaire
+    category: 'Main',
+    tags: ['Mijoté', 'Viande']
+  },
+  {
+    id: '14',
+    name: 'Tajine Lahlou (Sucré)',
+    description: 'Plat sucré-salé à base de pruneaux, abricots secs et amandes.',
+    price: '8€', // Nouveau
+    image: mtewemImg, // Image temporaire
+    category: 'Main',
+    tags: ['Sucré-Salé', 'Tradition']
+  },
+  {
+    id: '15',
     name: 'Berkoukes',
     description: 'Petites pâtes (plombs) en sauce rouge épicée avec légumes.',
-    price: '8€',
+    price: '12€', // Modifié
     image: berkoukesImg,
     category: 'Main',
     tags: ['Hiver', 'Épicé']
   },
   {
-    id: '8',
-    name: 'Gratin',
-    description: 'Gratin du jour fait maison, fondant et doré au four.',
-    price: '9€',
-    image: gratinimg, // Image temporaire
+    id: '16',
+    name: 'Bouzalouf',
+    description: 'Tête de mouton préparée traditionnellement en sauce (selon disponibilité).',
+    price: '10€', // Nouveau
+    image: bouzaloufimg, // Image temporaire
     category: 'Main',
-    tags: ['Four', 'Fromage']
+    tags: ['Tradition', 'Abats']
   },
   {
-    id: '9',
-    name: 'Riz Tunisien (Djerbien)',
-    description: 'Riz cuit à la vapeur avec un mélange de légumes, viande et épices.',
-    price: '9€',
-    image: djerbienimg, // Image temporaire
+    id: '17',
+    name: 'Douwara',
+    description: 'Tripes mijotées en sauce rouge relevée.',
+    price: '10€', // Modifié
+    image: dewaraImg,
     category: 'Main',
-    tags: ['Vapeur', 'Tunisie']
+    tags: ['Tripes', 'Sauce Rouge']
   },
   {
-    id: '10',
-    name: 'Pâtes Tounsi',
-    description: 'Pâtes à la tunisienne, relevées et savoureuses.',
-    price: '10€',
-    image: patestounsiimg, // Image temporaire
+    id: '18',
+    name: 'Loubiya',
+    description: 'Haricots blancs mijotés dans une sauce tomate onctueuse.',
+    price: '6€', // Nouveau
+    image: adesimg, // Image temporaire
     category: 'Main',
-    tags: ['Piquant', 'Pâtes']
+    tags: ['Populaire', 'Sauce']
   },
   {
-    id: '11',
-    name: 'Pâtes Sauce Rouge',
-    description: 'Pâtes classiques nappées d\'une sauce tomate onctueuse à la viande.',
-    price: '10€',
-    image: chtithaImg, // Image temporaire
+    id: '19',
+    name: 'Lentilles (Ades)',
+    description: 'Plat de lentilles mijotées à l\'algérienne, riche en fer.',
+    price: '6€', // Modifié
+    image: adesimg,
     category: 'Main',
-    tags: ['Tomate', 'Familial']
-  },
-  {
-    id: '12',
-    name: 'Pâtes Sauce Blanche',
-    description: 'Pâtes crémeuses préparées avec une sauce blanche au fromage ou champignons.',
-    price: '10€',
-    image: rechtaImg, // Image temporaire
-    category: 'Main',
-    tags: ['Crème', 'Douceur']
-  },
-  {
-    id: '13',
-    name: 'Moulokhia',
-    description: 'Plat de corète potagère mijoté longuement, servi avec de la viande tendre.',
-    price: '12€',
-    image: dewaraImg, // Image temporaire
-    category: 'Main',
-    tags: ['Spécialité', 'Sauce Verte']
+    tags: ['Chaud', 'Légumineuse']
   },
 
   // --- COUSCOUS ---
   {
     id: '20',
-    name: 'Couscous Algérien',
-    description: 'Semoule fine, sauce blanche ou rouge selon la tradition, légumes et viande.',
-    price: '12€',
-    image: couscousRoyalImg,
+    name: 'Couscous Poulet',
+    description: 'Semoule fine, légumes frais et morceaux de poulet.',
+    price: '12€', // Modifié
+    image: couscousPouletImg,
     category: 'Main',
-    tags: ['Tradition', 'Algérie']
+    tags: ['Tradition', 'Volaille']
   },
   {
     id: '21',
-    name: 'Couscous Tunisien',
-    description: 'Couscous rouge relevé à l\'harissa, servi avec légumes et viande.',
-    price: '12€',
+    name: 'Couscous Viande',
+    description: 'Couscous traditionnel garni de viande rouge tendre.',
+    price: '14€', // Modifié
     image: couscousViandeImg,
     category: 'Main',
-    tags: ['Relevé', 'Tunisie']
+    tags: ['Tradition', 'Viande']
   },
   {
     id: '22',
-    name: 'Masfous',
-    description: 'Couscous fin (souvent sucré-salé ou aux petits pois) selon la recette du chef.',
-    price: '7€',
-    image: couscousLegumeImg,
+    name: 'Couscous Royal',
+    description: 'L\'expérience complète : Viande, poulet et merguez.',
+    price: '16€', // Modifié
+    image: couscousRoyalImg,
     category: 'Main',
-    tags: ['Léger', 'Finesse']
+    tags: ['Festif', 'Copieux']
   },
 
-  // --- SANDWICHS & PAINS ---
+  // --- SPÉCIALITÉS (Pains & Sandwichs) ---
   {
     id: '30',
-    name: 'Frikasi Tounsi',
-    description: 'Beignet salé frit, garni de thon, pommes de terre, olives et harissa.',
-    price: '3€',
-    image: bourakImg, // Image temporaire
-    category: 'Sandwich',
-    tags: ['Street Food', 'Tunisie']
-  },
-  {
-    id: '31',
-    name: 'Mhajeb',
-    description: 'Feuilles de semoule fines farcies d\'une sauce tomate et oignons caramélisés.',
-    price: '3,50€',
-    image: kesraImg, // Image temporaire
-    category: 'Sandwich',
-    tags: ['Piquant', 'Chaud']
-  },
-  {
-    id: '32',
-    name: 'Batboute',
-    description: 'Petit pain marocain cuit à la poêle, farci de diverses garnitures fraîches.',
-    price: '5€',
-    image: khobzImg, // Image temporaire
-    category: 'Sandwich',
-    tags: ['Maroc', 'Moelleux']
-  },
-  {
-    id: '33',
-    name: 'Sandwich Viande Hachée',
-    description: 'Baguette ou pain maison garni de kefta grillée et frites.',
-    price: '6€',
-    image: khobzImg, // Image temporaire
-    category: 'Sandwich',
-    tags: ['Viande', 'Classique']
-  },
-  {
-    id: '34',
-    name: 'Sandwich Poulet Mariné',
-    description: 'Escalope de poulet marinée aux épices et grillée.',
-    price: '6€',
-    image: khobzImg, // Image temporaire
-    category: 'Sandwich',
-    tags: ['Poulet', 'Grillé']
-  },
-  {
-    id: '35',
-    name: 'Sandwich Merguez',
-    description: 'Merguez épicées grillées dans du pain frais.',
-    price: '6€',
-    image: khobzImg, // Image temporaire
-    category: 'Sandwich',
-    tags: ['Piquant', 'Grillade']
-  },
-  {
-    id: '36',
-    name: 'Kasra Farci',
-    description: 'Galette de semoule farcie.',
-    price: '2€',
+    name: 'Galette (Kesra / Matlouh)',
+    description: 'Pain traditionnel algérien (Semoule ou Levé) fait maison.',
+    price: '2€', // Modifié (regroupé)
     image: kesraImg,
-    category: 'Sandwich',
-    tags: ['Semoule', 'Snack']
-  },
-  {
-    id: '37',
-    name: 'Matloua',
-    description: 'Pain levé traditionnel algérienne cuit au tajine (vide).',
-    price: '2€',
-    image: khobzImg,
     category: 'Sandwich',
     tags: ['Pain', 'Maison']
   },
   {
-    id: '38',
-    name: 'Rakhsis',
-    description: 'Galette algérienne croustillante (vide).',
-    price: '2€',
-    image: kesraImg,
+    id: '31',
+    name: 'Mhadjeb',
+    description: 'Feuilles de semoule fines farcies d\'une sauce tomate et oignons.',
+    price: '3,50€', // Validé
+    image: kesraImg, // Image temporaire
     category: 'Sandwich',
-    tags: ['Pain', 'Croustillant']
+    tags: ['Piquant', 'Chaud']
+  },
+  // Je garde les sandwichs existants au cas où, avec les anciens prix ou ajustés si besoin
+  {
+    id: '32',
+    name: 'Frikasi Tounsi',
+    description: 'Beignet salé frit, garni de thon, pommes de terre, olives et harissa.',
+    price: '3€',
+    image: bourakImg,
+    category: 'Sandwich',
+    tags: ['Street Food', 'Tunisie']
+  },
+  {
+    id: '33',
+    name: 'Sandwich Merguez',
+    description: 'Merguez épicées grillées dans du pain frais.',
+    price: '6€',
+    image: khobzImg,
+    category: 'Sandwich',
+    tags: ['Grillade', 'Classique']
   },
 
-  // --- BOISSONS (Drinks) ---
+  // --- BOISSONS DU BLED (Drinks) ---
   {
     id: '40',
-    name: 'Hamoud Boualem (La Blanche)',
-    description: 'L\'authentique limonade algérienne, rafraîchissante et pétillante.',
-    price: '2,50€',
-    image: hamoudImg, // Image temporaire à remplacer
+    name: 'Hamoud Boualem (33cl)',
+    description: 'L\'authentique limonade algérienne (La Blanche).',
+    price: '2€', // Modifié
+    image: hamoudImg,
     category: 'Drink',
-    tags: ['Algérie', 'Gazeux', 'Citron']
+    tags: ['Algérie', 'Gazeux']
   },
   {
     id: '41',
-    name: 'Selecto',
-    description: 'Le célèbre soda brun algérien au goût unique de pomme et caramel.',
-    price: '2,50€',
-    image: selectoImg, // Image temporaire à remplacer
+    name: 'Selecto (33cl)',
+    description: 'Le célèbre soda brun au goût unique de pomme et caramel.',
+    price: '2€', // Modifié
+    image: selectoImg,
     category: 'Drink',
-    tags: ['Algérie', 'Gazeux', 'Culte']
+    tags: ['Algérie', 'Culte']
   },
   {
     id: '42',
-    name: 'Slim',
-    description: 'Boisson gazeuse aux fruits rafraîchissante (parfums selon disponibilité).',
-    price: '2,50€',
-    image: slimImg, // Image temporaire à remplacer
+    name: 'Slim (33cl)',
+    description: 'Boisson gazeuse aux fruits (Citron, Orange, Ananas...).',
+    price: '2€', // Modifié
+    image: slimImg,
     category: 'Drink',
     tags: ['Fruité', 'Gazeux']
+  },
+  {
+    id: '43',
+    name: 'Grande Bouteille (1L)',
+    description: 'Hamoud, Selecto ou Slim en format familial.',
+    price: '3,50€', // Nouveau
+    image: selectoImg, // Image temporaire
+    category: 'Drink',
+    tags: ['Familial', '1L']
   }
 ];
