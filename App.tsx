@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View } from './types';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import DailySpecials from './components/DailySpecials'; // <--- IMPORT ADDED
 import Values from './components/Values';
 import Menu from './components/Menu';
 import Order from './components/Order';
@@ -20,6 +21,10 @@ const App: React.FC = () => {
         return (
           <>
             <Hero onOrderClick={() => setCurrentView(View.ORDER)} />
+            
+            {/* 👇 ADDED HERE: VISIBLE ON HOME PAGE 👇 */}
+            <DailySpecials />
+            
             <Values />
           </>
         );
@@ -51,7 +56,6 @@ const App: React.FC = () => {
           <div className="text-center md:text-left w-full md:w-1/3 order-3 md:order-1 flex flex-col items-center md:items-start">
             <p className="opacity-60 text-sm mb-2">© 2025 Les Saveurs de Maghreb.<br/>Tous droits réservés.</p>
             
-            {/* --- TON TAG CLIQUABLE ICI --- */}
             <a 
               href="https://www.instagram.com/imskhdev/" 
               target="_blank" 
