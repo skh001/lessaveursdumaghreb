@@ -19,7 +19,14 @@ import gratinimg from '../assets/gratin.jpg';
 import djerbienimg from '../assets/djerbien.jpg';
 import patestounsiimg from '../assets/patestounsi.jpg';
 import adesimg from '../assets/ades.jpg';
-
+import tajinelahlouimg from '../assets/tajinelahlou.jpg';
+import mhajebimg from '../assets/mhajeb.jpg';
+import doulmaImg from '../assets/doulma.jpg';
+import safaimg from '../assets/safa.jpg';
+import quichepouletimg from '../assets/quichepoulet.jpg';
+import matlouhImg from '../assets/matlouh.jpg';
+import loubiyaimg from '../assets/loubiya.jpg';
+import sandwichmerguezimg from '../assets/sandwichmerguez.jpg';
 // --- IMPORTS TEMPORAIRES POUR LES BOISSONS ---
 import hamoudImg from '../assets/hamoud.jpg';
 import selectoImg from '../assets/selecto.jpg';
@@ -49,6 +56,15 @@ export const menuItems: MenuItem[] = [
     tags: ['Croustillant', 'Frit']
   },
   {
+    id: '44',
+    name: 'Doulma',
+    description: 'fait de légumes (comme la courgette, le poivron, la pomme de terre ou l’aubergine) farcis d’un mélange de viande hachée, de riz, d’herbes et d’épices, puis mijotés lentement dans une sauce légère à base de tomate.',
+    price: '8€', // Modifié
+    image: doulmaImg,
+    category: 'Starter',
+    tags: ['Traditionnel', '']
+  },
+  {
     id: '3',
     name: 'Brik',
     description: 'Feuille de brick croustillante farcie à l\'œuf coulant, thon et persil.',
@@ -62,7 +78,7 @@ export const menuItems: MenuItem[] = [
     name: 'Quiche au Poulet',
     description: 'Tarte salée maison garnie de morceaux de poulet et d\'un appareil crémeux.',
     price: '4€', // Nouveau
-    image: quicheimg, // Image temporaire
+    image: quichepouletimg, // Image temporaire
     category: 'Starter',
     tags: ['Snack', 'Maison']
   },
@@ -118,7 +134,7 @@ export const menuItems: MenuItem[] = [
     name: 'Tajine Lahlou (Sucré)',
     description: 'Plat sucré-salé à base de pruneaux, abricots secs et amandes.',
     price: '8€', // Nouveau
-    image: mtewemImg, // Image temporaire
+    image: tajinelahlouimg, // Image temporaire
     category: 'Main',
     tags: ['Sucré-Salé', 'Tradition']
   },
@@ -154,7 +170,7 @@ export const menuItems: MenuItem[] = [
     name: 'Loubiya',
     description: 'Haricots blancs mijotés dans une sauce tomate onctueuse.',
     price: '6€', // Nouveau
-    image: adesimg, // Image temporaire
+    image: loubiyaimg, // Image temporaire
     category: 'Main',
     tags: ['Populaire', 'Sauce']
   },
@@ -200,10 +216,19 @@ export const menuItems: MenuItem[] = [
   // --- SPÉCIALITÉS (Pains & Sandwichs) ---
   {
     id: '30',
-    name: 'Galette (Kesra / Matlouh)',
+    name: 'Galette (Kesra)',
     description: 'Pain traditionnel algérien (Semoule ou Levé) fait maison.',
     price: '2€', // Modifié (regroupé)
     image: kesraImg,
+    category: 'Sandwich',
+    tags: ['Pain', 'Maison']
+  },
+  {
+    id: '46',
+    name: 'Matlouh',
+    description: 'Pain traditionnel algérien fait maison.',
+    price: '2€', // Modifié (regroupé)
+    image: matlouhImg,
     category: 'Sandwich',
     tags: ['Pain', 'Maison']
   },
@@ -212,7 +237,7 @@ export const menuItems: MenuItem[] = [
     name: 'Mhadjeb',
     description: 'Feuilles de semoule fines farcies d\'une sauce tomate et oignons.',
     price: '3,50€', // Validé
-    image: kesraImg, // Image temporaire
+    image: mhajebimg, // Image temporaire
     category: 'Sandwich',
     tags: ['Piquant', 'Chaud']
   },
@@ -231,7 +256,7 @@ export const menuItems: MenuItem[] = [
     name: 'Sandwich Merguez',
     description: 'Merguez épicées grillées dans du pain frais.',
     price: '6€',
-    image: khobzImg,
+    image: sandwichmerguezimg,
     category: 'Sandwich',
     tags: ['Grillade', 'Classique']
   },
@@ -263,6 +288,15 @@ export const menuItems: MenuItem[] = [
     image: slimImg,
     category: 'Drink',
     tags: ['Fruité', 'Gazeux']
+  },
+    {
+    id: '45',
+    name: 'Safa',
+    description: 'un plat traditionnel algérien sucré, préparé à base de semoule fine cuite à la vapeur, puis mélangée avec du beurre, du sucre, de la cannelle et parfois des raisins secs. Elle est souvent servie lors des fêtes ou des occasions familiales.',
+    price: '3€', // Modifié
+    image: safaimg,
+    category: 'Dessert',
+    tags: ['Sucré', 'Traditionnel']
   },
   {
     id: '43',
