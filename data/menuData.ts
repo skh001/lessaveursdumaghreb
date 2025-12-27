@@ -35,6 +35,7 @@ import brikimg from '../assets/brik.jpg';
 import quicheimg from '../assets/quiche.jpg';
 import tadjineviandeimg from '../assets/tadjinviande.jpg';
 import bouzaloufimg from '../assets/bouzalouf.jpg';
+import chakhchoukhaimf from '../assets/chakhchoukha.jpg'
 export const menuItems: MenuItem[] = [
   // --- ENTRÉES & SNACKS ---
   {
@@ -59,7 +60,7 @@ export const menuItems: MenuItem[] = [
     id: '44',
     name: 'Doulma',
     description: 'fait de légumes (comme la courgette, le poivron, la pomme de terre ou l’aubergine) farcis d’un mélange de viande hachée, de riz, d’herbes et d’épices, puis mijotés lentement dans une sauce légère à base de tomate.',
-    price: '8€', // Modifié
+    price: '12€', // Modifié
     image: doulmaImg,
     category: 'Starter',
     tags: ['Traditionnel', '']
@@ -107,13 +108,13 @@ export const menuItems: MenuItem[] = [
     name: 'Chakhchoukha',
     description: 'Feuilles de semoule émiettées arrosées d\'une sauce rouge épicée, pois chiches et viande.',
     price: '13€', // Nouveau
-    image: chtithaImg, // Image temporaire (utilise une image sauce rouge)
+    image: chakhchoukhaimf, // Image temporaire (utilise une image sauce rouge)
     category: 'Main',
     tags: ['Biskra', 'Épicé']
   },
   {
     id: '12',
-    name: 'Tajine Poulet',
+    name: 'Tajine Zitoune ( olives )',
     description: 'Mijoté traditionnel aux olives ou légumes avec du poulet tendre.',
     price: '10€', // Modifié
     image: tajineImg,
@@ -142,7 +143,7 @@ export const menuItems: MenuItem[] = [
     id: '15',
     name: 'Berkoukes',
     description: 'Petites pâtes (plombs) en sauce rouge épicée avec légumes.',
-    price: '12€', // Modifié
+    price: '10€', // Modifié
     image: berkoukesImg,
     category: 'Main',
     tags: ['Hiver', 'Épicé']
@@ -236,21 +237,12 @@ export const menuItems: MenuItem[] = [
     id: '31',
     name: 'Mhadjeb',
     description: 'Feuilles de semoule fines farcies d\'une sauce tomate et oignons.',
-    price: '3,50€', // Validé
+    price: '3€', // Validé
     image: mhajebimg, // Image temporaire
     category: 'Sandwich',
     tags: ['Piquant', 'Chaud']
   },
   // Je garde les sandwichs existants au cas où, avec les anciens prix ou ajustés si besoin
-  {
-    id: '32',
-    name: 'Frikasi Tounsi',
-    description: 'Beignet salé frit, garni de thon, pommes de terre, olives et harissa.',
-    price: '3€',
-    image: bourakImg,
-    category: 'Sandwich',
-    tags: ['Street Food', 'Tunisie']
-  },
   {
     id: '33',
     name: 'Sandwich Merguez',
@@ -293,7 +285,7 @@ export const menuItems: MenuItem[] = [
     id: '45',
     name: 'Safa',
     description: 'un plat traditionnel algérien sucré, préparé à base de semoule fine cuite à la vapeur, puis mélangée avec du beurre, du sucre, de la cannelle et parfois des raisins secs. Elle est souvent servie lors des fêtes ou des occasions familiales.',
-    price: '3€', // Modifié
+    price: '10€', // Modifié
     image: safaimg,
     category: 'Dessert',
     tags: ['Sucré', 'Traditionnel']
